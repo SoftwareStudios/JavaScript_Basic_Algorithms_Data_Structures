@@ -7,7 +7,6 @@ function convertToRoman(num) {
         for (let i = 0; i < numArray.length; i++) {
             if (num >= numArray[i]) {
                 let count = Math.trunc(num / numArray[i]);
-                console.log("count after truncation= " + count);
                 for (let x = 0; x < count; x++) {
                     romanString += romanArray[i];
                 }
